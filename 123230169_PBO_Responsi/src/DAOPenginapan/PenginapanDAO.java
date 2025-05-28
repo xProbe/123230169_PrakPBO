@@ -87,6 +87,6 @@ public class PenginapanDAO implements PenginapanImplement {
     
     @Override
     public String[] getAllKamar() {
-        return new String[]{"A1", "A2", "A3", "B1", "B2"};
+        return new String[]{"A1", "A2", "A3"};
     }
 }

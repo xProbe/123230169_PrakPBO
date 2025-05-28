@@ -1,79 +1,43 @@
-
 package model;
 
 public class Penginapan {
     private int id;
-    private int nama;
-    private int barang;
-    private int harga;
-    private int cicilan;
-    private int bunga;
-    private int angsuran;
-    private int total;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getNama() {
-        return nama;
-    }
-
-    public void setNama(int nama) {
+    private String nama;
+    private String kontak;
+    private String ruang;
+    private int durasi;
+    private int totalHarga;
+    private String status;
+    
+    public Penginapan() {}
+    
+    public Penginapan(String nama, String kontak, String ruang, int durasi, int totalHarga, String status) {
         this.nama = nama;
-    }
-
-    public int getBarang() {
-        return barang;
-    }
-
-    public void setBarang(int barang) {
-        this.barang = barang;
-    }
-
-    public int getHarga() {
-        return harga;
-    }
-
-    public void setHarga(int harga) {
-        this.harga = harga;
-    }
-
-    public int getCicilan() {
-        return cicilan;
-    }
-
-    public void setCicilan(int cicilan) {
-        this.cicilan = cicilan;
-    }
-
-    public int getBunga() {
-        return bunga;
-    }
-
-    public void setBunga(int bunga) {
-        this.bunga = bunga;
-    }
-
-    public int getAngsuran() {
-        return angsuran;
-    }
-
-    public void setAngsuran(int angsuran) {
-        this.angsuran = angsuran;
-    }
-
-    public int getTotal() {
-        return total;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
+        this.kontak = kontak;
+        this.ruang = ruang;
+        this.durasi = durasi;
+        this.totalHarga = totalHarga;
+        this.status = status;
     }
     
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
     
+    public String getNama() { return nama; }
+    public void setNama(String nama) { this.nama = nama; }
+    
+    public String getKontak() { return kontak; }
+    public void setKontak(String kontak) { this.kontak = kontak; }
+    
+    public String getRuang() { return ruang; }
+    public void setRuang(String ruang) { this.ruang = ruang; }
+    
+    public int getDurasi() { return durasi; }
+    public void setDurasi(int durasi) { this.durasi = durasi; }
+    
+    public int getTotalHarga() { return totalHarga; }
+    public void setTotalHarga(int totalHarga) { this.totalHarga = totalHarga; }
+    
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
 }

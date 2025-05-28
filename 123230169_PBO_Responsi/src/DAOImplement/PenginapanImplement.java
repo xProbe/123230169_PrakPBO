@@ -1,12 +1,13 @@
-
 package DAOImplement;
 
 import java.util.List;
-import model.*;
+import model.Penginapan;
 
 public interface PenginapanImplement {
-    public void insert(elektronik t);
-    public void update(elektronik t);
-    public void delete(int id);
-    public List<>getAll();
+    void tambahPenyewa(Penginapan p);
+    void updatePenyewa(Penginapan p);
+    void hapusPenyewa(int id);
+    List<Penginapan> getAllPenyewa();
+    int getHargaKamar(String namaKamar);
+    String[] getAllKamar();
 }
